@@ -229,6 +229,27 @@ img {
 
 /* Inicio de Footer */
 
-.listadoCategorias {
+.siteFooter {
   border-top: 1px solid #e1e1e1;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+
+.siteFooter h3 {
+  margin: 0.5rem;
+}
+
+.gridFooter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footerMenu a {
+  display: block;
+}
+
+.copyright {
+  margin-top: 5rem;
+  text-align: center;
 }

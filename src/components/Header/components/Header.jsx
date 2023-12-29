@@ -179,38 +179,40 @@ export const Header = () => {
         </div>
       </main>
 
-      <footer
-        className={`${styles.listadoCategorias} ${styles.contenedor} ${styles.contenidoPrincipal}`}
-      >
-        <div>
-          <h3>Categorias</h3>
-          <nav className={styles.navegacion}>
-            <Link>Cocina</Link>
-            <Link>Oficina</Link>
-            <Link>Jardin</Link>
-            <Link>Cochera</Link>
-            <Link>Dormitorio</Link>
-          </nav>
+      <footer className={`${styles.siteFooter} `}>
+        <div className={`${styles.gridFooter} ${styles.contenedor}`}>
+          <div>
+            <h3>Categorias</h3>
+            <nav className={styles.footerMenu}>
+              <Link>Cocina</Link>
+              <Link>Oficina</Link>
+              <Link>Jardin</Link>
+              <Link>Cochera</Link>
+              <Link>Dormitorio</Link>
+            </nav>
+          </div>
+          <div>
+            <h3>Sobre Nosotros</h3>
+            <nav className={styles.footerMenu}>
+              <Link>Nuestra Historia</Link>
+              <Link>Mision, Vision y Valores</Link>
+              <Link>Carreras</Link>
+              <Link>Politica de Privacidad</Link>
+              <Link>Terminos del Servicio</Link>
+            </nav>
+          </div>
+          <div>
+            <h3>Soporte</h3>
+            <nav className={styles.footerMenu}>
+              <Link>Preguntas Frecuentes</Link>
+              <Link>Ayuda en Linea</Link>
+              <Link>Confianza y Seguridad</Link>
+            </nav>
+          </div>
         </div>
-        <div>
-          <h3>Sobre Nosotros</h3>
-          <nav className={styles.navegacion}>
-            <Link>Nuestra Historia</Link>
-            <Link>Mision, Vision y Valores</Link>
-            <Link>Carreras</Link>
-            <Link>Politica de Privacidad</Link>
-            <Link>Terminos del Servicio</Link>
-          </nav>
-        </div>
-        <div>
-          <h3>Soporte</h3>
-          <nav className={styles.navegacion}>
-            <Link>Preguntas Frecuentes</Link>
-            <Link>Ayuda en Linea</Link>
-            <Link>Confianza y Seguridad</Link>
-          </nav>
-        </div>
-        <p>Todos los derechos Reservados, TiendaMuebles</p>
+        <p className={styles.copyright}>
+          Todos los derechos Reservados, TiendaMuebles
+        </p>
       </footer>
     </>
   );
